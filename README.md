@@ -5,7 +5,7 @@
 
 - 現在の版: **Avatar Refinery Lite v0.1.1(無料・β)**
 - 対応: Unity 2022.3.22f1 / VRChat SDK Avatars 3.7〜3.10 / Modular Avatar・NDMF・AAO 使用時は「ビルド後の姿」で性能を算定
-- 配布: [BOOTH](#) ／ VCC・ALCOM(下記)／ [GitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
+- 配布: [BOOTH](https://runsol.booth.pm/) ／ VCC・ALCOM(下記)／ [GitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
 
 ## インストール
 
@@ -20,7 +20,7 @@
 
 ### unitypackage で入れる
 
-[BOOTH](#) または [Releases](https://github.com/tmiosg-commits/avatar-refinery/releases) から `AvatarRefinery_Lite_x.y.z.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。
+[BOOTH](https://runsol.booth.pm/) または [Releases](https://github.com/tmiosg-commits/avatar-refinery/releases) から `AvatarRefinery_Lite_x.y.z.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。
 
 ## 使い方
 
