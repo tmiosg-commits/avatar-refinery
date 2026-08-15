@@ -60,3 +60,7 @@ Hierarchy のアバターを右クリック → `Avatar Refinery > このアバ�
 
 - 利用規約: [LICENSE.md](LICENSE.md)(再配布禁止・改変私用可)
 - 更新履歴: [CHANGELOG.md](CHANGELOG.md)
+
+## 作者
+
+[Runsol](https://runsol.jp/) — 実体験からつくるソフトウェアスタジオ。Web アプリの公開前チェック「ShipCheck」と同じ発想で、アバターの「アップロード前チェック」として作りました。
