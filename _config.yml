@@ -1,0 +1,6 @@
+title: Avatar Refinery
+description: VRChatアバターを、アップロード前にまとめて健康診断。日本語で「何が問題で・なぜ・どう直すか」を表示する Unity エディタ拡張。
+theme: jekyll-theme-cayman
+lang: ja
+include:
+  - vpm.json

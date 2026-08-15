@@ -1,0 +1,34 @@
+{
+  "url": "https://tmiosg-commits.github.io/avatar-refinery/vpm.json",
+  "packages": {
+    "com.avatarrefinery.core": {
+      "versions": {
+        "0.1.1": {
+          "name": "com.avatarrefinery.core",
+          "displayName": "Avatar Refinery",
+          "version": "0.1.1",
+          "unity": "2022.3",
+          "description": "VRChatアバターをアップロード前にまとめて診断。何が問題で・なぜ・どう直すかを日本語で表示(読み取り専用)。",
+          "author": {
+            "name": "tmios",
+            "url": "https://x.com/runsol_ai"
+          },
+          "documentationUrl": "https://tmiosg-commits.github.io/avatar-refinery/",
+          "changelogUrl": "https://github.com/tmiosg-commits/avatar-refinery/blob/main/CHANGELOG.md",
+          "licensesUrl": "https://github.com/tmiosg-commits/avatar-refinery/blob/main/LICENSE.md",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0 <3.11.0"
+          },
+          "legacyFolders": {},
+          "hideInEditor": false,
+          "url": "https://github.com/tmiosg-commits/avatar-refinery/releases/download/v0.1.1/com.avatarrefinery.core-0.1.1.zip",
+          "zipSHA256": "5f989ec72b9017387d81f149a42911380765003baff444ae75ce3405cfd9b9f1",
+          "repo": "https://tmiosg-commits.github.io/avatar-refinery/vpm.json"
+        }
+      }
+    }
+  },
+  "name": "Avatar Refinery",
+  "author": "tmios",
+  "id": "com.avatarrefinery"
+}
