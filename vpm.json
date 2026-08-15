@@ -1,5 +1,8 @@
 {
+  "name": "Avatar Refinery",
+  "id": "com.avatarrefinery",
   "url": "https://tmiosg-commits.github.io/avatar-refinery/vpm.json",
+  "author": "tmios",
   "packages": {
     "com.avatarrefinery.core": {
       "versions": {
@@ -22,13 +25,10 @@
           "legacyFolders": {},
           "hideInEditor": false,
           "url": "https://github.com/tmiosg-commits/avatar-refinery/releases/download/v0.1.1/com.avatarrefinery.core-0.1.1.zip",
-          "zipSHA256": "5f989ec72b9017387d81f149a42911380765003baff444ae75ce3405cfd9b9f1",
+          "zipSHA256": "4b2ff38af01e825b8a28b75082a65baa5ae976734ed12142ab2192264d009803",
           "repo": "https://tmiosg-commits.github.io/avatar-refinery/vpm.json"
         }
       }
     }
-  },
-  "name": "Avatar Refinery",
-  "author": "tmios",
-  "id": "com.avatarrefinery"
+  }
 }
