@@ -3,7 +3,7 @@
 **VRChatアバターを、アップロード前にまとめて健康診断。**
 「何が問題で・なぜ問題で・どう直すか」を日本語で表示する Unity エディタ拡張です。診断は読み取り専用で、アバターやアセットは一切変更しません。
 
-- 現在の版: **Avatar Refinery Lite v0.1.1(無料・β)**
+- 現在の版: **Avatar Refinery Lite v0.1.2(無料・β)**
 - 対応: Unity 2022.3.22f1 / VRChat SDK Avatars 3.7〜3.10 / Modular Avatar・NDMF・AAO 使用時は「ビルド後の姿」で性能を算定
 - 配布: [BOOTH](https://runsol.booth.pm/items/8719734) ／ VCC・ALCOM(下記)／ [GitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
 
@@ -53,7 +53,7 @@ Hierarchy のアバターを右クリック → `Avatar Refinery > このアバ�
 
 ## サポート
 
-- 不具合報告・要望: **X(旧Twitter)の DM** → [@runsol_ai](https://x.com/runsol_ai)
+- 不具合報告・要望: **[要望・不具合フォーム](https://docs.google.com/forms/d/e/1FAIpQLScE2Q7IN8UgO88KjfH6bPwvhwP3Wkc0ajo6aroXzEjgiCHuGg/viewform)**(匿名可・Googleログイン不要。ツール内の「自動修正が欲しい」「この項目を報告」「不具合・要望を送る」ボタンからも開きます)または **X(旧Twitter)の DM** → [@runsol_ai](https://x.com/runsol_ai)
 - 対象は本ツールの不具合と使い方です。個別アバターの改変相談・他ツールの不具合は対象外です。
 - 「レポート保存」で出力した Markdown を添えていただくと、状況把握が早くなります。
 
