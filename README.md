@@ -3,9 +3,10 @@
 **VRChatアバターを、アップロード前にまとめて健康診断。**
 「何が問題で・なぜ問題で・どう直すか」を日本語で表示する Unity エディタ拡張です。診断は読み取り専用で、アバターやアセットは一切変更しません。
 
-- 現在の版: **Avatar Refinery Lite v0.1.2(無料・β)**
+- 現在の版: **Avatar Refinery Lite v0.2.0(無料・β)**
 - 対応: Unity 2022.3.22f1 / VRChat SDK Avatars 3.7〜3.10 / Modular Avatar・NDMF・AAO 使用時は「ビルド後の姿」で性能を算定
 - 配布: [BOOTH](https://runsol.booth.pm/items/8719734) ／ VCC・ALCOM(下記)／ [GitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
+- 自動修正がほしい方へ: 診断結果から**安全な項目だけをワンクリックで修正**する製品版 **[Avatar Refinery Pro](https://runsol.booth.pm/items/8737820)** があります(実行前プレビュー・自動バックアップ・「すべて元に戻す」付き)。Lite を入れたまま追加できます
 
 ## インストール
 
@@ -20,7 +21,7 @@
 
 ### unitypackage で入れる
 
-[BOOTH](https://runsol.booth.pm/items/8719734) または [Releases](https://github.com/tmiosg-commits/avatar-refinery/releases) から `AvatarRefinery_Lite_x.y.z.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。
+[BOOTH](https://runsol.booth.pm/items/8719734) または [Releases](https://github.com/tmiosg-commits/avatar-refinery/releases) から `AvatarRefinery_Lite_0.2.0.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。
 
 ## 使い方
 
@@ -32,7 +33,7 @@ Hierarchy のアバターを右クリック → `Avatar Refinery > このアバ�
 画面付きの詳しい解説: [【無料】VRChatアバターをアップロード前に健康診断｜Avatar Refinery Liteの使い方(note)](https://note.com/runsol/n/n60d707d3981b)
 結果は「⛔ アップロードを止める / ⚠ 見た目・動作が壊れる / 📉 ランクを下げている / ℹ 情報」の4段階に分かれ、各項目に **症状 → 検出 → 対応(手順)** が付きます。「詳細モード」で原因・影響・参考ページも表示。「レポート保存」で Markdown に書き出せます(質問・依頼の添付にどうぞ)。
 
-## 診断項目(Lite v0.1.2)
+## 診断項目(Lite v0.2.0)
 
 | 分類 | 項目 |
 |---|---|
@@ -48,12 +49,12 @@ Hierarchy のアバターを右クリック → `Avatar Refinery > このアバ�
 ## 注意
 
 - 表示されるランクはローカルでの推定です。最終的な値は VRChat のサーバー側で決まります。
-- 診断はアバターを変更しません。修正は表示された手順に沿って手動で行ってください(自動修正は製品版で提供予定)。
+- 診断はアバターを変更しません。修正は表示された手順に沿って手動で行ってください(ワンクリックの自動修正は製品版 [Avatar Refinery Pro](https://runsol.booth.pm/items/8737820) で提供しています)。
 - MMD 由来モデルなど、利用規約上 VRChat で使えないモデルの利用を推奨するものではありません。
 
 ## サポート
 
-- 不具合報告・要望: **[要望・不具合フォーム](https://docs.google.com/forms/d/e/1FAIpQLScE2Q7IN8UgO88KjfH6bPwvhwP3Wkc0ajo6aroXzEjgiCHuGg/viewform)**(匿名可・Googleログイン不要。ツール内の「自動修正が欲しい」「この項目を報告」「不具合・要望を送る」ボタンからも開きます)または **X(旧Twitter)の DM** → [@runsol_ai](https://x.com/runsol_ai)
+- 不具合報告・要望: **[要望・不具合フォーム](https://docs.google.com/forms/d/e/1FAIpQLScE2Q7IN8UgO88KjfH6bPwvhwP3Wkc0ajo6aroXzEjgiCHuGg/viewform)**(匿名可・Googleログイン不要。ツール内の「この項目を報告」「不具合・要望を送る」ボタンからも開きます)または **X(旧Twitter)の DM** → [@runsol_ai](https://x.com/runsol_ai)
 - 対象は本ツールの不具合と使い方です。個別アバターの改変相談・他ツールの不具合は対象外です。
 - 「レポート保存」で出力した Markdown を添えていただくと、状況把握が早くなります。
 
