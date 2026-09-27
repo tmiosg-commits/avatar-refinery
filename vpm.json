@@ -93,6 +93,28 @@
           "url": "https://tmiosg-commits.github.io/avatar-refinery/downloads/com.avatarrefinery.core-0.3.0.zip",
           "zipSHA256": "869dc1d55f5196e82d4787c1ae2aadd673f875742a11f49addf585fa0e4b732e",
           "repo": "https://tmiosg-commits.github.io/avatar-refinery/vpm.json"
+        },
+        "0.3.1": {
+          "name": "com.avatarrefinery.core",
+          "displayName": "Avatar Refinery Lite",
+          "version": "0.3.1",
+          "unity": "2022.3",
+          "description": "Read-only VRChat avatar preflight checks with Japanese and English guidance, performance estimates, and Markdown reports.",
+          "author": {
+            "name": "tmios",
+            "url": "https://x.com/runsol_ai"
+          },
+          "documentationUrl": "https://tmiosg-commits.github.io/avatar-refinery/",
+          "changelogUrl": "https://github.com/tmiosg-commits/avatar-refinery/blob/main/CHANGELOG.md",
+          "licensesUrl": "https://github.com/tmiosg-commits/avatar-refinery/blob/main/LICENSE.md",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.9.0 <3.11.0"
+          },
+          "legacyFolders": {},
+          "hideInEditor": false,
+          "url": "https://tmiosg-commits.github.io/avatar-refinery/downloads/com.avatarrefinery.core-0.3.1.zip",
+          "zipSHA256": "4bfd0ab8bfc3a26b734ab54b34d49b8f7de7a5599b3090e5ca54f508dc5022df",
+          "repo": "https://tmiosg-commits.github.io/avatar-refinery/vpm.json"
         }
       }
     }

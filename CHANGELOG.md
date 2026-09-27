@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 (2026-09-27)
+
+- Replaced the draft Lite terms with standalone Japanese and English terms of use. No diagnostic or UI behavior changed.
+- Lite のドラフト利用規約を正式な日英併記の利用規約に改めました。診断・UI の動作変更はありません。
+
 ## 0.3.0 (2026-08-29)
 
 - Added an English Unity Editor interface and English Markdown reports for all current diagnostic rules.

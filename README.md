@@ -5,9 +5,9 @@
 **VRChatアバターを、アップロード前にまとめて健康診断。**
 「何が問題で・なぜ問題で・どう直すか」を日本語・英語で表示する Unity エディタ拡張です。診断は読み取り専用で、アバターやアセットは一切変更しません。
 
-- 現在の版: **Avatar Refinery Lite v0.3.0(無料・β、日本語・英語対応)**
+- 現在の版: **Avatar Refinery Lite v0.3.1(無料・β、日本語・英語対応)**
 - 対応: Unity 2022.3.22f1 / VRChat SDK Avatars 3.9.x〜3.10.x / Modular Avatar・NDMF・AAO 使用時は「ビルド後の姿」で性能を算定
-- 配布: [BOOTH](https://runsol.booth.pm/items/8719734) ／ VCC・ALCOM(下記)／ [v0.3.0 unitypackageを直接ダウンロード](downloads/AvatarRefinery_Lite_0.3.0.unitypackage) ／ [旧版のGitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
+- 配布: [BOOTH](https://runsol.booth.pm/items/8719734) ／ VCC・ALCOM(下記)／ [v0.3.1 unitypackageを直接ダウンロード](downloads/AvatarRefinery_Lite_0.3.1.unitypackage) ／ [旧版のGitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
 - 自動修正がほしい方へ: 診断結果から**安全な項目だけをワンクリックで修正**する製品版 **[Avatar Refinery Pro](https://runsol.booth.pm/items/8737820)** があります(実行前プレビュー・自動バックアップ・「すべて元に戻す」付き)。Lite を入れたまま追加できます
 
 ## インストール
@@ -23,7 +23,7 @@
 
 ### unitypackage で入れる
 
-[このサイトから直接](downloads/AvatarRefinery_Lite_0.3.0.unitypackage) `AvatarRefinery_Lite_0.3.0.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。BOOTH は日本語向けの配布ページです。
+[このサイトから直接](downloads/AvatarRefinery_Lite_0.3.1.unitypackage) `AvatarRefinery_Lite_0.3.1.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。BOOTH は日本語向けの配布ページです。導入前に[日英併記の利用規約](LICENSE.md)をご確認ください。
 
 ## 使い方
 
@@ -35,7 +35,7 @@ Hierarchy のアバターを右クリック → `Avatar Refinery > このアバ�
 画面付きの詳しい解説: [【無料】VRChatアバターをアップロード前に健康診断｜Avatar Refinery Liteの使い方(note)](https://note.com/runsol/n/n60d707d3981b)
 結果は「⛔ アップロードを止める / ⚠ 見た目・動作が壊れる / 📉 ランクを下げている / ℹ 情報」の4段階に分かれ、各項目に **症状 → 検出 → 対応(手順)** が付きます。「詳細モード」で原因・影響・参考ページも表示。「レポート保存」で Markdown に書き出せます(質問・依頼の添付にどうぞ)。
 
-## 診断項目(Lite v0.3.0)
+## 診断項目(Lite v0.3.1)
 
 | 分類 | 項目 |
 |---|---|
