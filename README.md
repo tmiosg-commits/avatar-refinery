@@ -1,11 +1,13 @@
 # Avatar Refinery(アバターリファイナリー)
 
-**VRChatアバターを、アップロード前にまとめて健康診断。**
-「何が問題で・なぜ問題で・どう直すか」を日本語で表示する Unity エディタ拡張です。診断は読み取り専用で、アバターやアセットは一切変更しません。
+**[English guide: install Avatar Refinery Lite for free](en/)**
 
-- 現在の版: **Avatar Refinery Lite v0.2.0(無料・β)**
-- 対応: Unity 2022.3.22f1 / VRChat SDK Avatars 3.7〜3.10 / Modular Avatar・NDMF・AAO 使用時は「ビルド後の姿」で性能を算定
-- 配布: [BOOTH](https://runsol.booth.pm/items/8719734) ／ VCC・ALCOM(下記)／ [GitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
+**VRChatアバターを、アップロード前にまとめて健康診断。**
+「何が問題で・なぜ問題で・どう直すか」を日本語・英語で表示する Unity エディタ拡張です。診断は読み取り専用で、アバターやアセットは一切変更しません。
+
+- 現在の版: **Avatar Refinery Lite v0.3.0(無料・β、日本語・英語対応)**
+- 対応: Unity 2022.3.22f1 / VRChat SDK Avatars 3.9.x〜3.10.x / Modular Avatar・NDMF・AAO 使用時は「ビルド後の姿」で性能を算定
+- 配布: [BOOTH](https://runsol.booth.pm/items/8719734) ／ VCC・ALCOM(下記)／ [v0.3.0 unitypackageを直接ダウンロード](downloads/AvatarRefinery_Lite_0.3.0.unitypackage) ／ [旧版のGitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
 - 自動修正がほしい方へ: 診断結果から**安全な項目だけをワンクリックで修正**する製品版 **[Avatar Refinery Pro](https://runsol.booth.pm/items/8737820)** があります(実行前プレビュー・自動バックアップ・「すべて元に戻す」付き)。Lite を入れたまま追加できます
 
 ## インストール
@@ -14,14 +16,14 @@
 
 1. 下のリンクを押す(VCC または ALCOM が開きます)
    **[Add to VCC / ALCOM](vcc://vpm/addRepo?url=https%3A%2F%2Ftmiosg-commits.github.io%2Favatar-refinery%2Fvpm.json)**
-2. 「Avatar Refinery」リポジトリを追加 → プロジェクトの Manage Packages で **Avatar Refinery** を Install
+2. 「Avatar Refinery」リポジトリを追加 → プロジェクトの Manage Packages で **Avatar Refinery Lite** を Install
 
 リンクが開かない場合は、VCC の Settings > Packages > Add Repository に次の URL を貼ってください:
 `https://tmiosg-commits.github.io/avatar-refinery/vpm.json`
 
 ### unitypackage で入れる
 
-[BOOTH](https://runsol.booth.pm/items/8719734) または [Releases](https://github.com/tmiosg-commits/avatar-refinery/releases) から `AvatarRefinery_Lite_0.2.0.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。
+[このサイトから直接](downloads/AvatarRefinery_Lite_0.3.0.unitypackage) `AvatarRefinery_Lite_0.3.0.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。BOOTH は日本語向けの配布ページです。
 
 ## 使い方
 
@@ -33,7 +35,7 @@ Hierarchy のアバターを右クリック → `Avatar Refinery > このアバ�
 画面付きの詳しい解説: [【無料】VRChatアバターをアップロード前に健康診断｜Avatar Refinery Liteの使い方(note)](https://note.com/runsol/n/n60d707d3981b)
 結果は「⛔ アップロードを止める / ⚠ 見た目・動作が壊れる / 📉 ランクを下げている / ℹ 情報」の4段階に分かれ、各項目に **症状 → 検出 → 対応(手順)** が付きます。「詳細モード」で原因・影響・参考ページも表示。「レポート保存」で Markdown に書き出せます(質問・依頼の添付にどうぞ)。
 
-## 診断項目(Lite v0.2.0)
+## 診断項目(Lite v0.3.0)
 
 | 分類 | 項目 |
 |---|---|

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 (2026-08-29)
+
+- Added an English Unity Editor interface and English Markdown reports for all current diagnostic rules.
+- Added Auto / 日本語 / English language selection. Auto continues to use Japanese on Japanese systems.
+- Updated the supported VRChat SDK - Avatars range to 3.9.x–3.10.x; verified with Unity 2022.3.22f1 and SDK 3.10.4.
+- 英語UIと英語Markdownレポート、言語切り替えを追加しました。対応SDK範囲を3.9.x〜3.10.xに更新しました。
+
 ## 0.2.0 (2026-08-19)
 
 - 追加: 製品版(Avatar Refinery Pro・自動修正)を同じウィンドウに差し込むための拡張点。Pro を入れると各項目に「修正する…」、サマリに「まとめて修正」、フッターに「すべて元に戻す」が現れます(Lite 単体の動作は変わりません)
