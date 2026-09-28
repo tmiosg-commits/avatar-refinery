@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VRChat Streaming Mip Maps warning in Unity: find and fix affected textures</title>
+  <meta name="description" content="A practical Unity 2022.3 guide to finding avatar textures with Streaming Mip Maps disabled, changing the import setting safely, and checking the result. Includes a real Avatar Refinery Lite/Pro example.">
+  <link rel="canonical" href="https://tmiosg-commits.github.io/avatar-refinery/en/streaming-mip-maps.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="VRChat Streaming Mip Maps warning: a Unity avatar fix walkthrough">
+  <meta property="og:description" content="Find the affected textures, preview the change, and verify the result without confusing one fixed warning with a complete Quest optimization.">
+  <meta property="og:url" content="https://tmiosg-commits.github.io/avatar-refinery/en/streaming-mip-maps.html">
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; color: #1c2930; background: #f7faf9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #08695f; }
+    a:focus-visible { outline: 3px solid #f1b649; outline-offset: 3px; }
+    .wrap { width: min(900px, calc(100% - 36px)); margin-inline: auto; }
+    header { background: #123b40; color: #fff; }
+    nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 0; }
+    nav a { color: #d7f5eb; margin-left: 18px; }
+    .hero { padding: 50px 0 43px; background: linear-gradient(135deg, #123b40, #13645c); color: #fff; }
+    .eyebrow { margin: 0 0 9px; color: #c8f4d7; text-transform: uppercase; font-size: .82rem; font-weight: 750; letter-spacing: .1em; }
+    h1 { margin: 0 0 15px; max-width: 800px; font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.15; letter-spacing: -.025em; }
+    .lead { max-width: 760px; margin: 0; font-size: 1.14rem; color: #e6f5f3; }
+    main { padding: 42px 0 62px; }
+    section { margin: 0 0 42px; }
+    h2 { margin: 0 0 12px; font-size: 1.6rem; line-height: 1.25; }
+    h3 { margin: 25px 0 8px; font-size: 1.13rem; }
+    p { margin: 0 0 13px; }
+    ol, ul { padding-left: 25px; }
+    li { margin: 8px 0; }
+    figure { margin: 20px 0 26px; padding: 12px; background: #fff; border: 1px solid #d9e4e0; border-radius: 12px; }
+    figure img { display: block; width: 100%; height: auto; border-radius: 5px; }
+    figcaption { margin-top: 9px; color: #53686a; font-size: .94rem; }
+    .callout { padding: 19px 22px; background: #e7f2ee; border-left: 5px solid #19836e; border-radius: 10px; }
+    .warning { background: #fff3da; border-left-color: #ca8a20; }
+    .button { display: inline-block; margin: 5px 9px 5px 0; padding: 10px 16px; border-radius: 8px; background: #08695f; color: #fff; text-decoration: none; font-weight: 700; }
+    .button.secondary { background: #fff; color: #08695f; border: 1px solid #08695f; }
+    footer { padding: 26px 0; border-top: 1px solid #d6e2dd; color: #53686a; font-size: .91rem; }
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="Main navigation"><strong>Avatar Refinery</strong><div><a href="./">Free Lite tool</a><a href="https://github.com/tmiosg-commits/avatar-refinery">GitHub</a></div></nav></header>
+  <div class="hero"><div class="wrap"><p class="eyebrow">Unity avatar troubleshooting</p><h1>VRChat says Streaming Mip Maps are disabled. Which textures should you fix?</h1><p class="lead">Find the affected avatar textures, change the right Unity import settings, and re-check the warning. You can do it manually; Avatar Refinery Lite helps you locate the issue, while Pro adds a per-texture preview and guided fix.</p></div></div>
+  <main class="wrap">
+    <section aria-labelledby="meaning"><h2 id="meaning">What this warning means</h2><p>A texture used by your avatar has mipmaps but is not configured for mipmap streaming. Unity exposes this as a texture import setting. Depending on your project and SDK checks, you may see a warning or upload-related message. It does <em>not</em> mean the avatar is otherwise Quest-ready.</p><p>Texture import settings can affect every object using the same texture asset. Before changing a shared texture, check where else it is used and keep a project backup.</p></section>
+    <section aria-labelledby="manual"><h2 id="manual">Fix it manually in Unity</h2><ol><li>In your avatar project, identify the texture named by the VRChat SDK Builder warning or by a read-only <a href="./">Avatar Refinery Lite</a> check.</li><li>Select that texture asset in Unity’s <strong>Project</strong> window. In the <strong>Inspector</strong>, look at its Texture Import Settings. If needed, expand the advanced settings.</li><li>For an applicable 3D texture with generated mipmaps, enable <strong>Streaming Mip Maps</strong> (shown as <strong>Mip Streaming</strong> in some Unity panels), then select <strong>Apply</strong>. If the option is unavailable, inspect the texture type and mipmap settings instead of changing unrelated settings blindly.</li><li>Repeat for the affected textures. Run the SDK Builder check again and confirm that this specific warning has gone. Address any remaining blockers separately.</li></ol><p>Unity’s <a href="https://docs.unity3d.com/2022.3/Documentation/Manual/class-TextureImporter.html">Texture Import Settings manual</a> and <a href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/TextureImporter-streamingMipmaps.html">2022.3 Streaming Mipmaps API reference</a> describe the underlying setting.</p></section>
+    <section aria-labelledby="example"><h2 id="example">What the guided workflow looks like</h2><p>This test avatar had two affected textures. The images below are from an English-language Avatar Refinery Pro check, not a promise about every avatar.</p>
+      <figure><img src="../images/streaming-mip-maps-diagnosis.jpg" width="889" height="741" loading="lazy" alt="Avatar Refinery finding names two of three textures with Streaming Mip Maps disabled."><figcaption>Diagnosis: two of three textures were identified by name. Other avatar blockers were also present.</figcaption></figure>
+      <figure><img src="../images/streaming-mip-maps-preview.jpg" width="889" height="741" loading="lazy" alt="Pro fix preview lists two textures and shows Streaming Mip Maps changing from off to on for each."><figcaption>Pro preview: inspect the two targets, deselect either one if needed, then apply only selected changes.</figcaption></figure>
+      <figure><img src="../images/streaming-mip-maps-after.jpg" width="889" height="741" loading="lazy" alt="Before-and-after panel confirms two Streaming Mip Maps fixes while PC and Quest grades stay Very Poor."><figcaption>Result: the two settings were applied and the finding count fell. PC and Quest grades stayed Very Poor because separate blockers remained.</figcaption></figure>
+    </section>
+    <section class="callout warning" aria-labelledby="limits"><h2 id="limits">What this fix does not do</h2><p>Enabling Streaming Mip Maps is one import-setting change. It does not reduce polygon count, merge materials, convert shaders for mobile, or guarantee a better VRChat performance rank. VRChat determines the final rank; fix or investigate other findings on their own merits.</p></section>
+    <section class="callout" aria-labelledby="tools"><h2 id="tools">Choose your route</h2><p><strong>Free Lite:</strong> read-only diagnosis in English, affected-texture guidance, and a report. <strong>Pro:</strong> preview each supported change, apply selected texture settings with a backup, and compare before/after results. You do not need Pro to follow the manual steps above.</p><p><a class="button" href="./">Get Avatar Refinery Lite free</a><a class="button secondary" href="https://runsol.gumroad.com/l/avatar-refinery-pro?utm_source=avatarrefinery_site&amp;utm_medium=guide&amp;utm_campaign=streaming_mip_maps_en">See Avatar Refinery Pro on Gumroad</a></p></section>
+    <section aria-labelledby="sources"><h2 id="sources">References</h2><ul><li><a href="https://docs.unity3d.com/2022.3/Documentation/Manual/class-TextureImporter.html">Unity 2022.3 Texture Import Settings</a></li><li><a href="https://docs.unity3d.com/2022.3/Documentation/ScriptReference/TextureImporter-streamingMipmaps.html">Unity 2022.3 TextureImporter.streamingMipmaps</a></li><li><a href="https://creators.vrchat.com/avatars/avatar-performance-ranking-system/">VRChat Avatar Performance Ranking System</a></li></ul></section>
+  </main>
+  <footer><div class="wrap"><p>Avatar Refinery is independent software and is not affiliated with or endorsed by VRChat Inc. or Unity Technologies.</p><a href="./">Avatar Refinery Lite</a> · <a href="../LICENSE.md">Lite terms</a></div></footer>
+</body>
+</html>

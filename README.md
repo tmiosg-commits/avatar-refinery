@@ -2,6 +2,8 @@
 
 **[English guide: install Avatar Refinery Lite for free](en/)**
 
+English troubleshooting: **[Fix the VRChat Streaming Mip Maps warning in Unity](en/streaming-mip-maps.html)** (manual steps and a two-texture example).
+
 **VRChatアバターを、アップロード前にまとめて健康診断。**
 「何が問題で・なぜ問題で・どう直すか」を日本語・英語で表示する Unity エディタ拡張です。診断は読み取り専用で、アバターやアセットは一切変更しません。
 
