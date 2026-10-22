@@ -82,8 +82,16 @@
       <div class="grid">
         <div class="card"><h3>Upload blockers</h3><p>Spot missing Avatar Descriptors, rig and Animator issues, broken Expression references, Missing Scripts, and other common setup problems.</p></div>
         <div class="card"><h3>Materials and performance</h3><p>Find missing shaders, uncompressed or oversized textures, and estimated PC and Quest performance bottlenecks.</p></div>
-        <div class="card"><h3>Console errors, explained</h3><p>New in v0.4.0: open <strong>Tools → Avatar Refinery → Console Errors</strong> to sort red Console errors into Fix, Check, Not in dictionary, and Safe to ignore, with the cause and steps to fix 32 common VRChat-project errors. It keeps working even when the SDK or your scripts fail to compile.</p></div>
         <div class="card"><h3>Build-aware results</h3><p>When NDMF tools such as Modular Avatar or Avatar Optimizer are present, check the processed avatar and surface build errors or warnings.</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="console-heading">
+      <h2 id="console-heading">New in v0.4.0: Console errors, explained</h2>
+      <div class="card">
+        <h3>Red errors in the Unity Console?</h3>
+        <p>Open <strong>Tools → Avatar Refinery → Console Errors</strong>. It reads the Console (or Editor.log), sorts errors into <strong>Fix</strong>, <strong>Check</strong>, <strong>Not in dictionary</strong>, and <strong>Safe to ignore</strong>, and explains when each appears, its cause, and how to fix it, for 32 common VRChat-project errors.</p>
+        <p>Errors that are not in the dictionary can be copied as a question with your Unity and package versions, with user paths masked. It keeps working even when the VRChat SDK, NDMF, or your own scripts fail to compile, as long as Avatar Refinery was installed before the error appeared.</p>
       </div>
     </section>
 
