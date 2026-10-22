@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.0 (2026-10-22)
+
+- Added **Console Errors**: reads the errors in the Unity Console (or Editor.log) and sorts them into **Fix / Check / Not in dictionary / Safe to ignore**, with when each error appears, its cause, and how to fix it. Covers 32 common VRChat-project errors, including upload-rank, SDK sign-in, avatar validation, Missing Script, missing packages, duplicate DLLs, lilToon shader errors, and harmless licensing or shader-variant noise.
+- Errors not in the dictionary can be copied as a question with the Unity and package versions; paths that contain your user name are masked.
+- Console Errors lives in its own assembly with no references, so it keeps working even when the VRChat SDK, NDMF, or your own scripts fail to compile (as long as Avatar Refinery was installed before the error).
+- Open it from **Tools → Avatar Refinery → Console Errors**, or from the new buttons in the Avatar Refinery window. Avatar checks are unchanged.
+
+- 追加: **Console のエラー解説**。Unity の Console（または Editor.log）に出たエラーを読み、「対処が必要／確認／未登録／無視してよい」に仕分けて、出る場面・原因・直し方を表示します。アップロードのランク不足、SDK のログイン、アバターの検証エラー、Missing Script、パッケージ不足、DLL の重複、lilToon のシェーダーエラー、無視してよいライセンス通信やシェーダー変種のお知らせなど、VRChat の改変でよく出る32種類に対応しています。
+- 辞書にないエラーは、Unity とパッケージの版を添えた質問文としてコピーできます（ユーザー名の入ったパスは伏せます）。
+- この機能は参照を持たない独立したアセンブリに入っているため、VRChat SDK・NDMF・自分のスクリプトがコンパイルできない状態でも動き続けます（エラーが出る前に Avatar Refinery を入れてある場合）。
+- **Tools → Avatar Refinery → Console Errors** か、Avatar Refinery の画面に追加したボタンから開けます。アバター診断の動作は変わりません。
+
 ## 0.3.1 (2026-09-27)
 
 - Replaced the draft Lite terms with standalone Japanese and English terms of use. No diagnostic or UI behavior changed.

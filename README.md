@@ -7,9 +7,9 @@ English troubleshooting: **[Fix the VRChat Streaming Mip Maps warning in Unity](
 **VRChatアバターを、アップロード前にまとめて健康診断。**
 「何が問題で・なぜ問題で・どう直すか」を日本語・英語で表示する Unity エディタ拡張です。診断は読み取り専用で、アバターやアセットは一切変更しません。
 
-- 現在の版: **Avatar Refinery Lite v0.3.1(無料・β、日本語・英語対応)**
+- 現在の版: **Avatar Refinery Lite v0.4.0(無料・β、日本語・英語対応)**
 - 対応: Unity 2022.3.22f1 / VRChat SDK Avatars 3.9.x〜3.10.x / Modular Avatar・NDMF・AAO 使用時は「ビルド後の姿」で性能を算定
-- 配布: [BOOTH](https://runsol.booth.pm/items/8719734) ／ VCC・ALCOM(下記)／ [v0.3.1 unitypackageを直接ダウンロード](downloads/AvatarRefinery_Lite_0.3.1.unitypackage) ／ [旧版のGitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
+- 配布: [BOOTH](https://runsol.booth.pm/items/8719734) ／ VCC・ALCOM(下記)／ [v0.4.0 unitypackageを直接ダウンロード](downloads/AvatarRefinery_Lite_0.4.0.unitypackage) ／ [旧版のGitHub Releases](https://github.com/tmiosg-commits/avatar-refinery/releases)
 - 自動修正がほしい方へ: 診断結果から**安全な項目だけをワンクリックで修正**する製品版 **[Avatar Refinery Pro](https://runsol.booth.pm/items/8737820)** があります(実行前プレビュー・自動バックアップ・「すべて元に戻す」付き)。Lite を入れたまま追加できます
 
 ## インストール
@@ -25,7 +25,7 @@ English troubleshooting: **[Fix the VRChat Streaming Mip Maps warning in Unity](
 
 ### unitypackage で入れる
 
-[このサイトから直接](downloads/AvatarRefinery_Lite_0.3.1.unitypackage) `AvatarRefinery_Lite_0.3.1.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。BOOTH は日本語向けの配布ページです。導入前に[日英併記の利用規約](LICENSE.md)をご確認ください。
+[このサイトから直接](downloads/AvatarRefinery_Lite_0.4.0.unitypackage) `AvatarRefinery_Lite_0.4.0.unitypackage` をダウンロードし、プロジェクトを開いた状態でインポート(`Packages/com.avatarrefinery.core` に入ります)。BOOTH は日本語向けの配布ページです。導入前に[日英併記の利用規約](LICENSE.md)をご確認ください。
 
 ## 使い方
 
@@ -37,7 +37,17 @@ Hierarchy のアバターを右クリック → `Avatar Refinery > このアバ�
 画面付きの詳しい解説: [【無料】VRChatアバターをアップロード前に健康診断｜Avatar Refinery Liteの使い方(note)](https://note.com/runsol/n/n60d707d3981b)
 結果は「⛔ アップロードを止める / ⚠ 見た目・動作が壊れる / 📉 ランクを下げている / ℹ 情報」の4段階に分かれ、各項目に **症状 → 検出 → 対応(手順)** が付きます。「詳細モード」で原因・影響・参考ページも表示。「レポート保存」で Markdown に書き出せます(質問・依頼の添付にどうぞ)。
 
-## 診断項目(Lite v0.3.1)
+## Console のエラー解説(v0.4.0〜)
+
+Unity の Console に赤いエラーが出たときに、`Tools > Avatar Refinery > Console Errors (エラーの解説)` か、Avatar Refinery の画面の **エラーを確認 / Console のエラー** ボタンで開きます。
+
+- Console(または Editor.log)のエラーを読み、**対処が必要 / 確認 / 未登録 / 無視してよい** に仕分けます
+- 各エラーに **どんなときに出る → 原因 → 直し方** を表示します。アップロードのランク不足、SDK のログイン、Missing Script、パッケージ不足、DLL の重複、lilToon のシェーダーエラーなど、VRChat の改変でよく出る32種類に対応しています。大量に出る無害なお知らせは「無視してよい」にまとめて畳みます
+- 辞書にないエラーは、Unity と主なパッケージの版を添えた **質問用の文** としてコピーできます(ユーザー名の入ったパスは伏せます)
+- VRChat SDK・NDMF・自分のスクリプトがコンパイルできない状態でも動きます。**エラーが出る前に** Avatar Refinery を入れておいてください
+- 説明は目安です。直す前にプロジェクトのバックアップを取ってください
+
+## 診断項目(Lite v0.4.0)
 
 | 分類 | 項目 |
 |---|---|
